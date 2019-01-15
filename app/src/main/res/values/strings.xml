@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HighriseChallenge</string>
+    <string name="actor_name_plchldr">Name</string>
+    <string name="actor_age_plchldr">Age:</string>
+    <string name="content_desc">Actor</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="actors_actresses">Actors/Actresses</string>
+    <string name="description">Description</string>
+    <string name="score_plchldr">Score:</string>
+    <string name="title">Title</string>
+</resources>

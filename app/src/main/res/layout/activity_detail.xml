@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailActivity">
+
+    <TextView
+        android:id="@+id/tvMovieName"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginStart="@dimen/std_marg"
+        android:layout_marginTop="@dimen/std_marg"
+        android:layout_marginEnd="@dimen/std_marg"
+        android:layout_marginBottom="@dimen/std_marg"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/std_marg"
+        android:layout_marginTop="@dimen/std_marg"
+        android:layout_marginEnd="@dimen/std_marg"
+        android:layout_marginBottom="@dimen/std_marg"
+        android:layout_below="@id/tvMovieName"
+        android:text="@string/score_plchldr"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvDescriptionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/std_marg"
+        android:layout_marginTop="@dimen/std_marg"
+        android:layout_marginEnd="@dimen/std_marg"
+        android:layout_marginBottom="@dimen/std_marg"
+        android:text="@string/description"
+        android:gravity="center"
+        android:layout_below="@id/tvScore"
+        android:textSize="@dimen/detail_text"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/tvDescriptionTitle"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvActorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:layout_below="@id/tvDescription"
+        android:text="@string/actors_actresses"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvActors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvActorTitle">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
