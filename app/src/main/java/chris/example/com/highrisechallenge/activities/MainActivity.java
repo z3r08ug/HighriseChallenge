@@ -34,14 +34,6 @@ public class MainActivity extends AppCompatActivity
         
         MovieController controller = loadMovieData();
     
-        HashMap<String, MovieDetail> detailHashMap = controller.getDetails();
-        for (String key : detailHashMap.keySet())
-        {
-            System.out.println("------------------------------------------------");
-            System.out.println("Iterating or looping map using java5 foreach loop");
-            System.out.println("key: " + key + " value: " + detailHashMap.get(key));
-        }
-    
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         RecyclerView.ItemAnimator itemAnimator = new DefaultItemAnimator();
     
